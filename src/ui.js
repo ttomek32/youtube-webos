@@ -333,7 +333,7 @@ async function initAudioOnlyToggle() {
   applyAudioOverlayFilter();
 
   showNotification(
-    `Audio-Only mode: ${audioOnlyEnabled ? 'Enabled' : 'Disabled'}`,
+    `Tryb Tylko-Audio: ${audioOnlyEnabled ? 'Włączony' : 'Wyłączony'}`,
     2000,
     'blue'
   );
@@ -354,7 +354,7 @@ async function initAudioOnlyToggle() {
     if (overlay) return;
 
     overlay = Object.assign(document.createElement('div'), {
-      textContent: 'Audio-Only Mode Enabled - Press [BLUE] to toggle',
+      textContent: 'Tryb Tylko-Audio załączony - Naciśnij [BLUE], aby włączyć',
       className: YTAF_OVERLAY_CLASS
     });
     root.prepend(overlay);
@@ -378,7 +378,7 @@ initHideLogo();
 
 setTimeout(() => {
   showNotification(
-    'Press [GREEN] to open YTAF configuration screen',
+    'Naciśnij [GREEN], aby otworzyć ekran konfiguracji YTAF',
     2000,
     'green'
   );
